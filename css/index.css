@@ -1,0 +1,194 @@
+.bg-darknight {
+    background: #212F3D;
+    color: #bac9d8;
+}
+
+.bg-whiteday {
+    background: #3498DB;
+    color: black;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+#navbar {
+    transition: 1s;
+}
+
+.hover {
+    background-color: black;
+    opacity: 0.5;
+}
+
+#user {
+    background-image: url(/src/user.png);
+    background-size: 100%;
+    width: 3rem;
+    z-index: 9999;
+    border-radius: 100%;
+    height: 3rem;
+    transition: 1s;
+    position: absolute;
+}
+
+#contentNav {
+    position: relative;
+    padding: 15px;
+    display: table-column;
+}
+
+#chkbx {
+    display: none;
+}
+
+#swDay {
+    position: absolute;
+    left: 32rem;
+    z-index: 3;
+}
+
+#container {
+    display: flex;
+    align-items: center;
+}
+
+#espacio {
+    position: absolute;
+    overflow: hidden;
+    top: 0;
+    transition: 1s;
+}
+
+#paisaje {
+    background-size: 100%;
+    background-position: center 100%;
+    overflow: hidden;
+    background-repeat: no-repeat;
+    position: absolute;
+    bottom: 0;
+}
+
+#bienvenida {
+    font-family: 'Jura', sans-serif;
+    color: black;
+    background-color: none;
+    border-radius: 6px;
+    left: -20%;
+    top: -20%;
+    width: 40%;
+    background-color: #194721 0.1;
+    position: relative;
+    height: 20%;
+    margin: 0px auto;
+    text-align: left;
+    display: table;
+    transition: .30s;
+    cursor: pointer;
+    z-index: 6;
+}
+
+#user:hover {
+    z-index: 9999;
+    background-color: black;
+}
+
+#bienvenida h2 {
+    color: white;
+}
+
+#tiempo {
+    position: absolute;
+    z-index: 3;
+    right: 3%;
+    transition: 1s;
+}
+
+#tiempo h2 {
+    font-family: 'Jura', sans-serif;
+}
+
+#bienvenida h1 {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.estrella {
+    position: absolute;
+    background-color: white;
+    width: 2px;
+    height: 2px;
+}
+
+
+/* no tocar */
+
+.switch {
+    width: 62px;
+    height: 32px;
+    background: #E5E5E5;
+    z-index: 0;
+    margin: 0;
+    padding: 0;
+    appearance: none;
+    border: none;
+    cursor: pointer;
+    position: relative;
+    border-radius: 16px;
+    -moz-border-radius: 16px;
+    -webkit-border-radius: 16px;
+}
+
+.switch:before {
+    content: ' ';
+    position: absolute;
+    left: 1px;
+    top: 1px;
+    width: 60px;
+    height: 30px;
+    background: #FFFFFF;
+    z-index: 1;
+    border-radius: 16px;
+    -moz-border-radius: 16px;
+    -webkit-border-radius: 16px;
+}
+
+.switch:after {
+    content: ' ';
+    height: 29px;
+    width: 29px;
+    border-radius: 28px;
+    background: #FFFFFF;
+    position: absolute;
+    z-index: 2;
+    top: 1px;
+    left: 1px;
+    -webkit-transition-duration: 300ms;
+    transition-duration: 300ms;
+    -webkit-box-shadow: 0 2px 5px #999999;
+    box-shadow: 0 2px 5px #999999;
+}
+
+.switchOn,
+.switchOn:before {
+    background: #194721 !important;
+}
+
+.switchOn:after {
+    left: 50% !important;
+}
+
+
+/* no tocar */
+
+@keyframes starOp {
+    0% {
+        opacity: 0.1;
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0.1;
+    }
+}
